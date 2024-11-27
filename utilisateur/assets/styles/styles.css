@@ -1,0 +1,300 @@
+body {
+    font-family: 'Roboto', sans-serif; /* Police Roboto */
+    padding: 0;
+    margin: 0;
+}
+
+/* Styles pour le bandeau */
+header {
+    background-color: #f9f9f9;
+    color: #333;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Effet d'ombre */
+}
+
+header img {
+    width: 400px;
+}
+
+/* Styles pour la grille d'images */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+    padding: 10px;
+}
+
+.gallery>div, .gallery>a{
+    position: relative;
+    display: block;
+    text-decoration: none;
+    color: #000;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.gallery h3 {
+    margin: 0;
+    font-size: 16px;
+}
+
+.gallery p {
+    margin: 0;
+    font-size: 14px;
+    color: #777;
+}
+
+/* Styles pour les filtres */
+.filters {
+    text-align: right;
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 10px 10px 0;
+}
+
+.filters label {
+    display: block;
+    margin: 0 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+select, input[type="text"], input[type="submit"] {
+    padding: 5px;
+    font-size: 14px;
+}
+
+input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 7px 20px;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.gallery div {
+    position: relative;
+}
+
+.like {
+    position: absolute;
+    top: 76%;
+    right: 10px;
+    font-size: 12px;
+    color: #aaa;
+    background-color: white;
+    padding: 5px;
+}
+.like i {
+    color: red;
+    cursor: pointer;
+}
+
+.lieu {
+    font-size: .8em;
+    color: #aaa;
+}
+
+/* Styles pour l'œuvre d'art */
+.artwork {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    width: 80%;
+    margin:auto;
+    justify-items: flex-start;
+}
+
+.artwork img {
+    max-width: 70%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.artwork-details {
+    flex: 1;
+    padding-left: 20px;
+}
+
+.artwork-details h2 {
+    margin: 0;
+    font-size: 24px;
+    text-align: left;
+}
+
+.artwork-details p {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #777;
+}
+
+/* Styles pour le planning d'exposition */
+.exhibition-schedule {
+    margin-top: 20px;
+    font-size: 14px;
+
+}
+
+.exhibition-schedule li {
+    margin-bottom: 10px;
+}
+h2 {
+    text-align: center;
+}
+.retour {
+    text-align: center;
+    margin-top: 20px;
+}
+.retour a {
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+}
+.votes {
+    margin-top: 0px;
+    font-size: 20px;
+}
+.votes a {
+    text-decoration: none;
+    color: #000;
+    font-size: 50px;
+    color:red;
+}
+/*h3, h4 {*/
+/*    margin-bottom: 5px;*/
+/*}*/
+
+/*header {*/
+/*    background-color: #f9f9f9;*/
+/*    color: #333;*/
+/*    text-align: center;*/
+/*    padding: 10px;*/
+/*    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); !* Effet d'ombre *!*/
+/*}*/
+
+/*header img {*/
+/*    width: 400px;*/
+/*}*/
+
+/*!* Styles pour la grille d'images *!*/
+/*.gallery {*/
+/*    display: grid;*/
+/*    grid-template-columns: repeat(3, 1fr); !* Trois colonnes de largeur égale *!*/
+/*    gap: 20px;*/
+/*    padding: 10px;*/
+/*}*/
+
+/*.gallery div {*/
+/*    text-align: center;*/
+/*}*/
+
+/*.gallery img {*/
+/*    width: 150px; !* Largeur fixe pour les images *!*/
+/*    height: 150px; !* Hauteur fixe pour les images *!*/
+/*    border: 1px solid #ddd;*/
+/*    border-radius: 5px;*/
+/*}*/
+
+/*.gallery h3 {*/
+/*    margin: 0;*/
+/*    font-size: 16px;*/
+/*}*/
+
+/*.gallery p {*/
+/*    margin: 0;*/
+/*    font-size: 14px;*/
+/*    color: #777;*/
+/*}*/
+
+/*!*.like {*!*/
+/*!*    font-size: 12px;*!*/
+/*!*    color: #aaa;*!*/
+/*!*    background-color: white;*!*/
+/*!*    padding: 5px;*!*/
+/*!*}*!*/
+
+/*!*.like i {*!*/
+/*!*    color: red;*!*/
+/*!*    cursor: pointer;*!*/
+/*!*}*!*/
+
+/*.lieu {*/
+/*    font-size: .8em;*/
+/*    color: #aaa;*/
+/*}*/
+
+/* Styles pour les filtres */
+.filters {
+    text-align: right;
+    margin: 10px 0;
+}
+
+.filters label {
+    margin: 0 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+select, input[type="text"], input[type="submit"] {
+    padding: 5px;
+    font-size: 14px;
+}
+
+input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 7px 20px;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+/*il faut mettre le background du boutton likeButton en transparent et mettre en rouge le contenu
+*/
+#likeButton {
+    background-color: transparent;
+    border: none;
+    color: red;
+    font-size: 20px;
+    cursor: pointer;
+}
+#dislikeButton {
+    background-color: transparent;
+    border: none;
+    color: red;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+@keyframes heartDisintegration {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(0);
+        opacity: 0;
+    }
+}
+
+.heart {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+/* Appliquer l'animation aux cœurs */
+.disintegrate {
+    animation: heartDisintegration 5s forwards; /* Appliquer l'animation pendant 5 secondes */
+}
